@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Train-Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Users/Shampopencil/Desktop/HomeWorks/homework7/Train-Scheduler/TrainSched.css">
+</head>
+
+<body style="background-color:  rgb(12, 191, 191);">
+    <div class="container" style="background-color: rgb(59, 235, 235);">
+        <div class="jumbotron jumbotron-fluid border" style="background-color: rgb(156, 245, 184)">
+            <h1 class="display-5" id="Welcome">Welcome to the <span id="jumboTrainSched">Train Scheduler</span></h1>
+        </div>
+        <div class="col" id="steps">
+            Just type a <span id="styleSteps"><b>Train Name | Destination | Train Time </b></span>
+        </div>
+        <form>
+
+        </form>
+        <br />
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Train Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Example Train</td>
+                    <td>Cleveland, Ohio</td>
+                    <td>20:00</td>
+                </tr>
+            </tbody>
+            <!--Put a black row(after the form and table is working correctly-->
+        </table>
+        <br />
+        <br />
+    </div>
+
+
+
+    <script src="/Users/Shampopencil/Desktop/HomeWorks/homework7/Train-Scheduler/trainSched.js"></script>
+</body>
+
+</html>
+<!---/////////Instructions
+Make sure that your app suits this basic spec:
+When adding trains, administrators should be able to submit the following:
+Train Name
+Destination 
+First Train Time -- in military time
+Frequency -- in minutes
+Code this app to calculate when the next train will arrive; this should be relative to the current time.
+Users from many different machines must be able to view same train times.
+Styling and theme are completely up to you. Get Creative!-->
