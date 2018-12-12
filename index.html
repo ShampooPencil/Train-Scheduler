@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/Users/Shampopencil/Desktop/HomeWorks/homework7/Train-Scheduler/TrainSched.css">
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script> <!--this is the host url-->
 </head>
 
 <body style="background-color:  rgb(12, 191, 191);">
@@ -19,7 +20,27 @@
             Just type a <span id="styleSteps"><b>Train Name | Destination | Train Time </b></span>
         </div>
         <form>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Train Name</span>
+                </div>
+                <input type="text" class="form-control" id="train_name" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
 
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Destination</span>
+                </div>
+                <input type="text" class="form-control" id="destination" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Train Time</span>
+                </div>
+                <input type="text" class="form-control" id="train_time" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <button type="button" class="btn btn-primary" id="submit">Submit</button>
         </form>
         <br />
         <table class="table table-hover table-dark">
