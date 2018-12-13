@@ -1,4 +1,5 @@
  // Initialize Firebase
+ var listOfTrains = 2;
  var config = {
     apiKey: "AIzaSyDFU_yqG4ASFdArCOKQTfozhTcd5TU7qOw",
     authDomain: "train-schedule-8f97f.firebaseapp.com",
@@ -24,8 +25,23 @@
     }
 
     trainData.ref().push(train);
-    trainData.ref()
+    trainData.ref();
+});
 
-  })
+trainData.ref().on("child_added", function(snapshot){
+  console.log(snapshot.val());
+  var trains = snapshot.val().TrainName;
+  var DESTINATION =snapshot.val().destination_;
+  var TRAINTIME = snapshot.val().TrainTime;
+  var newRow = $("<tr>").append(
+    $("<th>").text(listOfTrains++),
+    $("<td>").text(trains),
+    $("<td>").text(DESTINATION),
+    $("<td>").text(TRAINTIME)
+  );
+  $("#train-rows").append(newRow);
+});
 
+
+// update: 6:38pm have to do the firebase retreival.
 
