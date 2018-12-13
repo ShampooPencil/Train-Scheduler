@@ -15,6 +15,7 @@
   var trainData = firebase.database();
 
   $("#submit").on("click", function(){
+    $("#choo-sound")[0].play();
       var trainName = $("#train_name").val().trim(); 
       var destination = $("#destination").val().trim();
       var trainTime = $("#train_time").val().trim(); 
@@ -80,6 +81,7 @@ trainData.ref().on("child_added", function(snapshot){
   trainData.ref();*/
 });
 $("#clear").on("click", function() {
+  $("#Brake")[0].play();
   trainData.ref().remove();
   $("#train-rows").empty();
   

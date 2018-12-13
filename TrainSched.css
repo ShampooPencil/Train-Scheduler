@@ -3,7 +3,7 @@
     color: rgb(33, 55, 142);
     padding-left: 20px;
     padding-right: 20px;
-    border: 5px solid rgb(255, 0, 195);
+    border: 5px solid rgb(189, 10, 109);
 }
 #Welcome{
     color: rgb(116, 49, 210);
@@ -16,5 +16,5 @@
 }
 #styleSteps{
     font-size: 30px;
-    color: rgb(136, 6, 88);
+    color: rgb(189, 10, 109);;
 }
