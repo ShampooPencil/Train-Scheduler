@@ -14,7 +14,7 @@
 
 <body style="background-color:  rgb(189, 10, 109);">
     <div class="container" style="background-color: rgb(115, 233, 233);">
-        <div class="jumbotron jumbotron-fluid border" style="background-color: rgb(156, 245, 184)">
+        <div class="jumbotron jumbotron-fluid border" style="background-color: rgb(156, 245, 184);">
             <h1 class="display-5" id="Welcome">Welcome to the <span id="jumboTrainSched">Train Scheduler</span></h1>
         </div>
         <div class="col" id="steps">
@@ -23,7 +23,7 @@
         <form>
             <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px">Train Name</span>
+                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px; width: 7em; text-align: center;">Train Name</span>
                 </div>
                 <input type="text" class="form-control" id="train_name" placeholder="Name of Train" aria-label="Small" aria-describedby="inputGroup-sizing-sm" style="background-color:
                  rgb(242, 202, 202); color: rgb(0, 0, 0); font-size: 17px">
@@ -31,21 +31,21 @@
 
               <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px">Destination</span>
+                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px;width: 7em; text-align: center;">Destination</span>
                 </div>
                 <input type="text" class="form-control" id="destination" placeholder="Destination you are going to" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
                 style="background-color: rgb(242, 202, 202); color: rgb(0, 0, 0); font-size: 17px">
               </div>
               <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px">Frequency</span>
+                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px; width: 7em; text-align: center;">Frequency</span>
                 </div>
                 <input type="text" class="form-control" id="frequency" id="train_name" placeholder="Frequency -- in minutes" aria-label="Small" aria-describedby="inputGroup-sizing-sm" style="background-color:
                rgb(242, 202, 202); color: rgb(0, 0, 0); font-size: 17px">
               </div>
               <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px">Train Time</span>
+                  <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: aquamarine; color: rgb(0, 0, 0); font-size: 20px; width: 7em; text-align: center;">Train Time</span>
                 </div>
                 <input type="text" class="form-control" id="train_time" placeholder="When does the train start CHOO-CHOOING?" aria-label="Small" aria-describedby="inputGroup-sizing-sm" style="background-color:
                 rgb(242, 202, 202); color: rgb(0, 0, 0); font-size: 17px">
@@ -53,11 +53,12 @@
               <div class="chooChoo">
                 <audio id="choo-sound" src="/Users/Shampopencil/Desktop/HomeWorks/homework7/Train-Scheduler/Train_Honk_Horn_Clear-Mike_Koenig-1632487478.wav" type="audio/mpeg"></audio>
                 <button type="button" class="btn btn-primary" id="submit" style="color:rgb(208, 252, 164); font-size: 20px">Submit</button>
-              </div>
-              <div class="trainBrakeSound">
+              <!--</div>-->
+              <!--<div class="trainBrakeSound">-->
                 <audio id="Brake" src="/Users/Shampopencil/Desktop/HomeWorks/homework7/Train-Scheduler/aaj_0466_TrainWhstl1SFX.mp3" type="audio/mpeg"></audio>
                 <button type="button" class="btn btn-primary" id="clear" style="color:rgb(208, 252, 164); float: right;">CLEAR</button>
-              </div>
+              <!--</div>-->
+            </div>
         </form>
         <br/>
         <table class="table table-hover table-dark" style="color:rgb(187, 254, 121);font-size: 17px">
