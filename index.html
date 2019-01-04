@@ -8,12 +8,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./TrainSched.css">
+    <link rel="stylesheet" href="Train-Scheduler/animating-gradients-gradientfade/gradientFade.css">
+    <!-- <link rel="stylesheet" href="./gradientFade.css"> -->
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script> <!--this is the host url-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script><!--for moment-->
+    <script src="Train-Scheduler/animating-gradients-gradientfade/gradientFade.js"></script> 
+    <!-- <script src="./gradientFade.js"></script> -->
 </head>
 
 <body style="background-color:  rgb(189, 10, 109);">
-    <div class="container" style="background-color: rgb(115, 233, 233);">
+    <!-- <div class="container" style="background-color: rgb(115, 233, 233);"> -->
+        <div class="container">
+                <div style="background: linear-gradient(to right, #ee9ca7, #ffdde1)" class="gradient active"></div>
+                <div style="background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d)" class="gradient"></div>
+                <div style="background: linear-gradient(to right, #ee9ca7, #8a8a8a)" class="gradient"></div>
+                <div style="background: linear-gradient(to right, #34f351, #ffdde1)" class="gradient"></div>
+                <div style="background: linear-gradient(to right, #007991, #78ffd6);" class="gradient"></div>
+            
         <div class="jumbotron jumbotron-fluid border" style="background-color: rgb(156, 245, 184);">
             <h1 class="display-5" id="Welcome">Welcome to the <span id="jumboTrainSched">Train Scheduler</span></h1>
         </div>
